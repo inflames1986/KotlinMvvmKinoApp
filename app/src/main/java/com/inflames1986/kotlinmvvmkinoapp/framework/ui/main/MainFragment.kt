@@ -67,13 +67,8 @@ class MainFragment : Fragment() {
         filmTitle.text = filmData.film_title.film
         filmYear.text = filmData.film_year.toString()
         filmBudget.text = filmData.film_budget.toString()
-
-//        GenreLabel.text = String.format(
-//            getString(R.string.Genre),
-//            filmData.film_title,
-//        )
-//        filmYear.text = filmData.toString()
-//        imdbValue.text = filmData.toString()
+        filmGenre.text = filmData.film_title.genre
+        filmImdbValue.text = filmData.film_title.imdb.toString()
     }
 
     companion object {
