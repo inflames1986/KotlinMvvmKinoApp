@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_15_dp">15dp</dimen>
+    <dimen name="budget_value_text_size">40sp</dimen>
+    <dimen name="year_text_size">30sp</dimen>
+    <dimen name="film_name_margin_top">50sp</dimen>
+    <dimen name="Genre_text_size">30sp</dimen>
+
+</resources>
