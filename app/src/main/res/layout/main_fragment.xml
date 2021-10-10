@@ -10,9 +10,22 @@
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        android:id="@+id/Layout_title_name"
+        android:text="@string/film_layout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/film_title"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:layout_marginTop="@dimen/film_name_margin_top" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         android:id="@+id/film_title"
         tools:text="Avatar"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Layout_title_name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:textStyle="bold"
@@ -55,13 +68,35 @@
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:id="@+id/film_genre"
-        android:text="@string/Genre"
-        tools:text="Fantasy"
+        android:id="@+id/film_genre_layout"
+        android:text="@string/genre"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="@dimen/margin_15_dp"
         app:layout_constraintTop_toBottomOf="@+id/film_budget_value" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/film_genre"
+        tools:text="Fantasy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_15_dp"
+        app:layout_constraintTop_toBottomOf="@+id/film_genre_layout" />
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/film_imdbLayout"
+        android:text="@string/imdb_text_Layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        android:textSize="@dimen/Genre_text_size"
+        android:layout_marginTop="@dimen/margin_15_dp"
+        app:layout_constraintTop_toBottomOf="@+id/film_genre" />
 
     <TextView
         android:layout_height="wrap_content"
@@ -73,7 +108,7 @@
         android:textStyle="bold"
         android:textSize="@dimen/Genre_text_size"
         android:layout_marginTop="@dimen/margin_15_dp"
-        app:layout_constraintTop_toBottomOf="@+id/film_genre" />
+        app:layout_constraintTop_toBottomOf="@+id/film_imdbLayout" />
 
     <ProgressBar
         android:layout_height="wrap_content"
@@ -91,6 +126,6 @@
         android:layout_width="wrap_content"
         android:id="@+id/filmGroup"
         android:visibility="invisible"
-        app:constraint_referenced_ids="film_title, film_year, film_budget, film_genre, film_budget_value, film_imdbValue" />
+        app:constraint_referenced_ids="film_title, film_year, film_genre, film_budget_value, film_imdbValue" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
