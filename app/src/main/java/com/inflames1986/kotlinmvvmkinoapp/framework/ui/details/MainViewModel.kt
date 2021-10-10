@@ -1,4 +1,4 @@
-package com.inflames1986.kotlinmvvmkinoapp.framework.ui.main
+package com.inflames1986.kotlinmvvmkinoapp.framework.ui.details
 
 import android.util.Log
 import androidx.lifecycle.*
@@ -11,13 +11,21 @@ class MainViewModel(private val repository: Repository) : ViewModel(), Lifecycle
 
     fun getLiveData(): LiveData<AppState> = liveData
 
-    fun getFilm() = getDataFromLocalSource()
+    fun getFilmFromLocalSourceRus() = getDataFromLocalSource(isRussian = true)
 
-    private fun getDataFromLocalSource() {
+    fun getFilmFromLocalSourceWorld() = getDataFromLocalSource(isRussian = false)
+
+    private fun getDataFromLocalSource(isRussian: Boolean) {
         liveData.value = AppState.Loading
         Thread {
             sleep(1000)
-            liveData.postValue(AppState.Success(repository.getFilmFromLocalStorage()))
+            liveData.postValue(
+                if (isRussian) {
+                    AppState.Success(repository.getFilmFromLocalStorageRus())
+                } else {
+                    AppState.Success(repository.getFilmFromLocalStorageWorld())
+                }
+            )
         }.start()
     }
 
