@@ -1,8 +1,8 @@
 package com.inflames1986.kotlinmvvmkinoapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.inflames1986.kotlinmvvmkinoapp.ui.main.MainFragment
+import androidx.appcompat.app.AppCompatActivity
+import com.inflames1986.kotlinmvvmkinoapp.framework.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
 
