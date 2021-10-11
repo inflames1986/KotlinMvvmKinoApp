@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">KotlinMvvmKinoApp</string>
+    <string name="budget">Budget:</string>
+    <string name="Genre">Genre</string>
 </resources>
