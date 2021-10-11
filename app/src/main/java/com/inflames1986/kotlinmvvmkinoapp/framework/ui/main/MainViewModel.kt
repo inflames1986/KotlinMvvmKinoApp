@@ -1,4 +1,4 @@
-package com.inflames1986.kotlinmvvmkinoapp.framework.ui.details
+package com.inflames1986.kotlinmvvmkinoapp.framework.ui.main
 
 import android.util.Log
 import androidx.lifecycle.*

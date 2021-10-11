@@ -29,12 +29,9 @@ class DetailsFragment : Fragment() {
                 filmTitle.text = film.film
                 filmGenre.text = film.genre
                 filmImdbValue.text = film.imdb.toString()
-                fun setData(filmData: FilmInfo) = with(binding) {
-                    filmTitle.text = filmData.film_title.film
-                    filmYear.text = filmData.film_year.toString()
-                    filmBudget.text = filmData.film_budget.toString()
+                filmBudget.text = it.film_budget.toString()
+                filmYear.text = it.film_year.toString()
 
-                }
             }
         }
     }
