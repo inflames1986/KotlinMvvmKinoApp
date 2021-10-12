@@ -5,9 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.inflames1986.kotlinmvvmkinoapp.databinding.FragmentMainRecyclerItemBinding
 import com.inflames1986.kotlinmvvmkinoapp.framework.ui.main.MainFragment
 import com.inflames1986.kotlinmvvmkinoapp.model.entities.FilmInfo
+
 
 class MainFragmentAdapter(private val itemClickListener: MainFragment.OnItemViewClickListener) :
     RecyclerView.Adapter<MainFragmentAdapter.MainViewHolder>() {
@@ -38,6 +40,7 @@ class MainFragmentAdapter(private val itemClickListener: MainFragment.OnItemView
 
         fun bind(filmInfo: FilmInfo) = with(binding) {
             mainFragmentRecyclerItemTextView.text = filmInfo.film_title.film
+            Glide.with(mainFragmentRecyclerItemImageView).load(filmInfo.film_title.image).into(mainFragmentRecyclerItemImageView)
             root.setOnClickListener { itemClickListener.onItemViewClick(filmInfo) }
         }
     }
