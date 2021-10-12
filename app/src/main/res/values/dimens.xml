@@ -2,9 +2,14 @@
 <resources>
 
     <dimen name="margin_15_dp">15dp</dimen>
-    <dimen name="budget_value_text_size">40sp</dimen>
+    <dimen name="budget_value_text_size">15sp</dimen>
     <dimen name="year_text_size">30sp</dimen>
-    <dimen name="film_name_margin_top">50sp</dimen>
+    <dimen name="film_name_margin_top">20sp</dimen>
     <dimen name="Genre_text_size">30sp</dimen>
+    <dimen name="film_name_text_size">25sp</dimen>
+    <dimen name="Imdb_text_size">15sp</dimen>
+    <dimen name="label_image_size">83dp</dimen>
+    <dimen name="film_name_padding">5dp</dimen>
+    <dimen name="layout_divider_height">1dp</dimen>
 
 </resources>
