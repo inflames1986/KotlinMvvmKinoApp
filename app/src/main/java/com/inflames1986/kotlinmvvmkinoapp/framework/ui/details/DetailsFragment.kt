@@ -29,7 +29,7 @@ class DetailsFragment : Fragment() {
                 filmTitle.text = film.film
                 filmGenre.text = film.genre
                 filmImdbValue.text = film.imdb.toString()
-                filmBudget.text = it.film_budget.toString()
+                filmBudgetValue.text = it.film_budget.toString()
                 filmYear.text = it.film_year.toString()
 
             }
