@@ -16,7 +16,7 @@ class MainFragmentAdapter(private val itemClickListener: MainFragment.OnItemView
     private lateinit var binding: FragmentMainRecyclerItemBinding
 
     @SuppressLint("NotifyDataSetChanged")
-    fun setWeather(data: List<FilmInfo>) {
+    fun setFilm(data: List<FilmInfo>) {
         filmData = data
         notifyDataSetChanged()
     }

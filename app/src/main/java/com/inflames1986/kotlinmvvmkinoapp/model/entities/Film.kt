@@ -9,5 +9,7 @@ data class Film(
 
     val film: String,
     val genre: String,
-    val imdb: Double
+    val imdb: Double,
+    val image: String
+
 ) : Parcelable

@@ -31,7 +31,6 @@ class DetailsFragment : Fragment() {
                 filmImdbValue.text = film.imdb.toString()
                 filmBudgetValue.text = it.film_budget.toString()
                 filmYear.text = it.film_year.toString()
-
             }
         }
     }

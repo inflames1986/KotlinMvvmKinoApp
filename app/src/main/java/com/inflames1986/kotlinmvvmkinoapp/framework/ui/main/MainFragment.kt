@@ -76,7 +76,7 @@ class MainFragment : Fragment() {
             is AppState.Success -> {
                 mainFragmentLoadingLayout.visibility = View.GONE
                 adapter = MainFragmentAdapter(onItemViewClickListener).apply {
-                    setWeather(appState.filmData)
+                    setFilm(appState.filmData)
                 }
                 mainFragmentRecyclerView.adapter = adapter
             }
