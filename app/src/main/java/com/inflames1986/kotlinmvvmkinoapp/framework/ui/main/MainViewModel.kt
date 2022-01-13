@@ -1,7 +1,9 @@
 package com.inflames1986.kotlinmvvmkinoapp.framework.ui.main
 
-import android.util.Log
-import androidx.lifecycle.*
+import androidx.lifecycle.LifecycleObserver
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import com.inflames1986.kotlinmvvmkinoapp.AppState
 import com.inflames1986.kotlinmvvmkinoapp.model.repository.Repository
 import java.lang.Thread.sleep
@@ -21,8 +23,8 @@ class MainViewModel(private val repository: Repository) : ViewModel(), Lifecycle
         }.start()
     }
 
-    @OnLifecycleEvent(Lifecycle.Event.ON_START)
-    private fun onViewStart() {
-        Log.i("LifecycleEvent", "onStart")
-    }
+//    @OnLifecycleEvent(Lifecycle.Event.ON_START)
+//    private fun onViewStart() {
+//        Log.i("LifecycleEvent", "onStart")
+//    }
 }

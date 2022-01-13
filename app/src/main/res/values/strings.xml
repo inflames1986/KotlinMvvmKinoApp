@@ -2,4 +2,7 @@
     <string name="app_name">KotlinMvvmKinoApp</string>
     <string name="budget">Budget:</string>
     <string name="Genre">Genre</string>
+    <string name="film_layout">Фильм</string>
+    <string name="genre">Жанр</string>
+    <string name="imdb_text_Layout">IMDB</string>
 </resources>
